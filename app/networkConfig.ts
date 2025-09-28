@@ -1,29 +1,30 @@
 import { getFullnodeUrl } from "@mysten/sui/client";
-import {
-  DEVNET_COUNTER_PACKAGE_ID,
-  TESTNET_COUNTER_PACKAGE_ID,
-  MAINNET_COUNTER_PACKAGE_ID,
-} from "./constants";
 import { createNetworkConfig } from "@mysten/dapp-kit";
+import {
+  DEVNET_SHALLOT_PACKAGE_ID,
+  TESTNET_SHALLOT_PACKAGE_ID,
+  MAINNET_SHALLOT_PACKAGE_ID,
+} from "./constants";
 
+// Create network configuration for Shallot
 const { networkConfig, useNetworkVariable, useNetworkVariables } =
   createNetworkConfig({
     devnet: {
       url: getFullnodeUrl("devnet"),
       variables: {
-        counterPackageId: DEVNET_COUNTER_PACKAGE_ID,
+        shallotPackageId: DEVNET_SHALLOT_PACKAGE_ID,
       },
     },
     testnet: {
       url: getFullnodeUrl("testnet"),
       variables: {
-        counterPackageId: TESTNET_COUNTER_PACKAGE_ID,
+        shallotPackageId: TESTNET_SHALLOT_PACKAGE_ID,
       },
     },
     mainnet: {
       url: getFullnodeUrl("mainnet"),
       variables: {
-        counterPackageId: MAINNET_COUNTER_PACKAGE_ID,
+        shallotPackageId: MAINNET_SHALLOT_PACKAGE_ID,
       },
     },
   });
