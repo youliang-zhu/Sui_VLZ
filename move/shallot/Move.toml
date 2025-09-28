@@ -8,3 +8,9 @@ Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-fram
 
 [addresses]
 shallot = "0x0"
+
+[dev-dependencies]
+# Development dependencies for testing
+
+[dev-addresses]
+# Development addresses for testing
