@@ -110,3 +110,15 @@ temp/
 
 # Turbo
 .turbo
+
+.devcontainer/
+.nvmrc
+components.json
+next-env.d.ts
+next.config.js
+package-lock.json
+pnpm-lock.yaml
+postcss.config.js
+tailwind.config.js
+tsconfig.json
+prettier.config.cjs
