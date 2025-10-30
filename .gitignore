@@ -116,9 +116,9 @@ temp/
 components.json
 next-env.d.ts
 next.config.js
-package-lock.json
+package.json
 pnpm-lock.yaml
-postcss.config.js
+postcss.config.mjs
 tailwind.config.js
 tsconfig.json
 prettier.config.cjs
